@@ -35,7 +35,7 @@ class Board extends React.Component {
         value={this.state.squares[i]}
         onClick={() => this.handleClick(i)}
       />
-    ); 
+    );
   }
 
   render() {
@@ -62,7 +62,7 @@ class Board extends React.Component {
         <div className="board-row">
           {this.renderSquare(6)}
           {this.renderSquare(7)}
-         {this.renderSquare(8)}
+          {this.renderSquare(8)}
         </div>
       </div>
     );
@@ -91,7 +91,7 @@ ReactDOM.render(
   <Game />,
   document.getElementById('root')
 );
- 
+
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
